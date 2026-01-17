@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>学信档案</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial;
+      background: #f5f6f7;
+      color: #333;
+    }
+
+    /* 顶部标题 */
+    .nav {
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .nav .back {
+      position: absolute;
+      left: 12px;
+      font-size: 20px;
+    }
+
+    /* 绿色栏目标题 */
+    .section-header {
+      background: #29b58a;
+      color: #fff;
+      padding: 12px 16px;
+      font-size: 16px;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin: 16px 0 8px;
+      color: #666;
+    }
+
+    .bind {
+      color: #29b58a;
+      font-size: 13px;
+    }
+
+    /* 卡片通用 */
+    .card {
+      border-radius: 10px;
+      padding: 16px;
+      color: #fff;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      margin-bottom: 12px;
+    }
+
+    .card.green {
+      background: linear-gradient(135deg, #2cc295, #27a87d);
+    }
+
+    .card.blue {
+      background: linear-gradient(135deg, #5aa6ff, #3d82f0);
+    }
+
+    .card-title {
+      font-size: 18px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .card-sub {
+      font-size: 14px;
+      opacity: 0.95;
+    }
+
+    .tag {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      background: rgba(255,255,255,0.25);
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+    }
+
+    .card-wrap {
+      position: relative;
+    }
+
+    /* 信息提示块 */
+    .info-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 16px;
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .info-action {
+      text-align: center;
+      color: #29b58a;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <div class="nav">
+    <div class="back">×</div>
+    学信档案
+  </div>
+
+  <!-- 栏目头 -->
+  <div class="section-header">高等教育信息</div>
+
+  <div class="container">
+
+    <!-- 学籍信息 -->
+    <div class="section-title">
+      <span>学籍信息（1）</span>
+      <span class="bind">尝试绑定</span>
+    </div>
+
+    <div class="card-wrap">
+      <div class="card green">
+        <div class="card-title" contenteditable="true">清华大学</div>
+        <div class="card-sub" contenteditable="true">会计学 ｜ 普通全日制</div>
+        <div class="tag">本科</div>
+      </div>
+    </div>
+
+    <!-- 学历信息 -->
+    <div class="section-title">
+      <span>学历信息（1）</span>
+      <span class="bind">尝试绑定</span>
+    </div>
+
+    <div class="card-wrap">
+      <div class="card blue">
+        <div class="card-title" contenteditable="true">清华大学</div>
+        <div class="card-sub" contenteditable="true">会计学 ｜ 普通全日制</div>
+        <div class="tag">本科</div>
+      </div>
+    </div>
+
+    <!-- 学位信息 -->
+    <div class="section-title">
+      <span>学位信息</span>
+      <span class="bind">尝试绑定</span>
+    </div>
+
+    <div class="info-box">
+      您还未绑定学位信息，可以使用“尝试绑定学位”功能绑定您的学位。
+      <div class="info-action">提示信息 ⌄</div>
+    </div>
+
+    <!-- 考研信息 -->
+    <div class="section-title">
+      <span>考研信息</span>
+    </div>
+
+    <div class="info-box">
+      <strong>您没有考研信息！</strong><br>
+      您目前没有考研信息，系统提供2006年以来入学的硕士研究生报名和成绩数据。
+    </div>
+
+  </div>
+
+</body>
+</html>
+
